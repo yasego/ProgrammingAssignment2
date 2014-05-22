@@ -1,13 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Below code is for getting inverse matrix
+## If possible, use cached data for compute efficiency
+ 
 
-## Write a short comment describing this function
 
-
-# set : set the matrix that which requires inverse matrix
-# get : get the set matrix
-# setinverse : save an inverse matrix of the set matrix 
-# getinverse : get the inverse matrix 
+# makeCacheMatrix : make a list of functions(set, get, setinverse, getinverse)
+# 1. set : set the matrix that which requires inverse matrix
+# 2. get : get the set matrix
+# 3. setinverse : save an inverse matrix of the set matrix 
+# 4. getinverse : get the inverse matrix 
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -25,11 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
         
 }
 
-
-## Write a short comment describing this function
-
-# 1. check whether there is cached data
-# 2. If there is cached data then print it, otherwise call setinverse function to get the inverse matrix 
+#  cacheSolve : return the inverse matrix of the set matrx. 
+#  If there is cached data then print it, otherwise call setinverse function to get the inverse matrix .
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
